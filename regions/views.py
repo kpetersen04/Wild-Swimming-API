@@ -2,11 +2,13 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Region
 from .serializers.common import RegionSerializer
 
 class RegionListVIew(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
     def get(self, _request):
         regions = Region.objects.all()
         print(regions)
@@ -15,6 +17,7 @@ class RegionListVIew(APIView):
         return Response(serialized_regions.data, status=status.HTTP_200_OK)
     
 class RegionDetailView(APIView):
+    permission_classes = (IsAuthenticatedOrReadOnly, )
     # function used to get the region with the matched primary key 
     def get_region(self, pk):
         try: 

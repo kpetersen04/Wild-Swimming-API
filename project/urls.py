@@ -20,5 +20,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('regions/', include('regions.urls')),
-    path('swim-sites/', include('swim_sites.urls'))
+    path('swim-sites/', include('swim_sites.urls')),
+    path('auth/', include('jwt_auth.urls'))
 ]
