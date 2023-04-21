@@ -1,4 +1,4 @@
-from rest_framework.authentication import BaseAuthentication
+from rest_framework.authentication import BasicAuthentication
 from rest_framework.exceptions import PermissionDenied
 from django.contrib.auth import get_user_model
 from django.conf import settings
@@ -6,7 +6,7 @@ import jwt
 
 User = get_user_model()
 
-class JWTAuthentication(BaseAuthentication):
+class JWTAuthentication(BasicAuthentication):
     def authenticate(self, request):
         auth_header = request.headers.get('Authorization')
         print(request.headers)
