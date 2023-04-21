@@ -1,7 +1,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.exceptions import PermissionDenied
+from rest_framework.exceptions import PermissionDenied, NotFound
 from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 from django.conf import settings
@@ -43,3 +43,24 @@ class LoginView(APIView):
         )
 
         return Response({'token': token, 'message': f"Welcome back {user_to_login.username}"})
+    
+class UserListView(APIView):
+    # Can you get all I get a 'Method/GET/not allowed' error returned from postman
+    def get_all_users(self, _request):
+        users = User.objects.all()
+        serialized_users = UserSerializer(users, many=True)
+        return Response(serialized_users.data, status=status.HTTP_202_ACCEPTED)
+
+class UserDetailView(APIView):
+    def get_user(self, pk):
+        try: 
+            return User.objects.get(pk=pk)
+        except User.DoesNotExist:
+            raise NotFound(detail="No user with that id can be found.")
+        
+    def get(self, _request, pk):
+        user = self.get_user(pk=pk)
+        serialized_user = UserSerializer(user)
+        return Response(serialized_user.data, status=status.HTTP_200_OK)
+    
+    

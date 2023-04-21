@@ -1,3 +1,28 @@
-from django.shortcuts import render
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from django.db import IntegrityError
+from rest_framework.exceptions import NotFound, PermissionDenied
+from rest_framework.permissions import IsAuthenticated
 
-# Create your views here.
+from .models import Comment
+from .serializers.common import CommentSerializer
+
+class CommentListView(APIView):
+    #  permission_classes = (IsAuthenticated, )
+     def post(self, request): 
+          request.data["owner"] = request.user.id
+          comment_to_create = CommentSerializer(data=request.data)
+
+          try: 
+               comment_to_create.is_valid()
+               comment_to_create.save()
+               return Response(comment_to_create.data, status=status.HTTP_201_CREATED)
+          except IntegrityError as e: 
+               return Response({"detail": str(e)}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+          except AssertionError as e:
+               return Response({"detail": str(e)}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+          except: 
+               return Response('Unprocessible Entity', status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
+
