@@ -9,7 +9,7 @@ from .models import Comment
 from .serializers.common import CommentSerializer
 
 class CommentListView(APIView):
-    #  permission_classes = (IsAuthenticated, )
+     permission_classes = (IsAuthenticated, )
      def post(self, request): 
           request.data["owner"] = request.user.id
           comment_to_create = CommentSerializer(data=request.data)
@@ -24,5 +24,16 @@ class CommentListView(APIView):
                return Response({"detail": str(e)}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
           except: 
                return Response('Unprocessible Entity', status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+          
+class CommentDetailView(APIView):
+     def delete(self, request, pk):
+          try:
+               comment_to_delete = Comment.objects.get(pk=pk)
+               if comment_to_delete.created_by !=request.user:
+                    raise PermissionDenied()
+               comment_to_delete.delete()
+               return Response(status=status.HTTP_204_NO_CONTENT)
+          except Comment.DoesNotExist:
+               raise NotFound
 
 
