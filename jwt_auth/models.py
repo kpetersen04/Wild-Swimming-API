@@ -10,7 +10,7 @@ class User(AbstractUser):
     # add a subdirectory called 'profile_photos' within the media directory of your project
     bio = models.TextField(max_length=400)
     favorite_sites = models.ManyToManyField('swim_sites.Swim_site', blank=True)
-    all_comments = models.ForeignKey('comments.Comment', related_name='users', on_delete=models.CASCADE, blank=True, null=True)
+    # all_comments = models.ForeignKey('comments.Comment', related_name='jwt_auth', on_delete=models.CASCADE, blank=True)
     # locations_rated = models.ManyToManyField('swim_sites.Swim_site', blank=True)
     # followers = 
     # following = 

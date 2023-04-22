@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Swim_site
 from .serializers.common import Swim_siteSerializer
+from .serializers.populated import PopulatedSwim_siteSerializer
 
 class SwimSiteListView(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly, )
@@ -24,5 +25,5 @@ class SwimSiteDetailView(APIView):
 
     def get(self, _request, pk):
         swim_site = self.get_swim_site(pk=pk)
-        serialized_swim_site = Swim_siteSerializer(swim_site)
+        serialized_swim_site = PopulatedSwim_siteSerializer(swim_site)
         return Response(serialized_swim_site.data, status=status.HTTP_200_OK)
