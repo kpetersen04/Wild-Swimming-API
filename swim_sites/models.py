@@ -7,7 +7,6 @@ class Swim_site(models.Model):
     description = models.TextField(max_length=400, blank=True)
     image = models.URLField(blank=True)
     parking_info = models.CharField(max_length=100, blank=True)
-    # site_comments = models.ForeignKey('comments.Comment', related_name='swim_sites', on_delete=models.CASCADE, blank=True, null=True)
     # rating = 
 
     def __str__(self):

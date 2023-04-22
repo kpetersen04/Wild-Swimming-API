@@ -46,8 +46,7 @@ class LoginView(APIView):
         return Response({'token': token, 'message': f"Welcome back {user_to_login.username}"})
     
 class UserListView(APIView):
-    # Can you get all I get a 'Method/GET/not allowed' error returned from postman
-    def get_all_users(self, _request):
+    def get(self, _request):
         users = User.objects.all()
         serialized_users = UserSerializer(users, many=True)
         return Response(serialized_users.data, status=status.HTTP_202_ACCEPTED)
