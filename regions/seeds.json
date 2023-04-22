@@ -1,0 +1,58 @@
+[
+{
+  "model": "regions.region",
+  "pk": 1,
+  "fields": {
+    "region_name": "South West England",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 2,
+  "fields": {
+    "region_name": "South East England",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 3,
+  "fields": {
+    "region_name": "East England",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 4,
+  "fields": {
+    "region_name": "Midlands and Central England",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 5,
+  "fields": {
+    "region_name": "Northern England",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 6,
+  "fields": {
+    "region_name": "Wales",
+    "description": ""
+  }
+},
+{
+  "model": "regions.region",
+  "pk": 7,
+  "fields": {
+    "region_name": "Scotland",
+    "description": ""
+  }
+}
+]
