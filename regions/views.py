@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Region
 from .serializers.common import RegionSerializer
+from .serializers.populated import PopulatedRegionSerializer
 
 class RegionListVIew(APIView):
     permission_classes = (IsAuthenticatedOrReadOnly, )
@@ -27,6 +28,6 @@ class RegionDetailView(APIView):
 
     def get(self, _request, pk):
         region = self.get_region(pk=pk)
-        serialized_region = RegionSerializer(region)
+        serialized_region = PopulatedRegionSerializer(region)
         return Response(serialized_region.data, status=status.HTTP_200_OK)
     
