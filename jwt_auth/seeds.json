@@ -19,5 +19,28 @@
     "user_permissions": [],
     "favorite_sites": []
   }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "kirstin",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "kpetersen",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2023-04-22T13:17:06Z",
+    "email": "kpetersen@elon.edu",
+    "first_name": "Kirstin",
+    "last_name": "Petersen",
+    "profile_photo": "profile_photos/KirstinAndy-Wedding-Preps-103.jpeg",
+    "bio": "I like clear cool water.",
+    "groups": [],
+    "user_permissions": [],
+    "favorite_sites": [
+      1
+    ]
+  }
 }
 ]

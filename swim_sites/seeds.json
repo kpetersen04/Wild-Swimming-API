@@ -1,2 +1,184 @@
 [
+{
+  "model": "swim_sites.swim_site",
+  "pk": 1,
+  "fields": {
+    "name": "St Nectan’s Kieve",
+    "region": 1,
+    "location": "Cornwall",
+    "postcode": "PL34 0B",
+    "description": "A tall, slender Waterfall or Gorge at the head of a wild woody dingle. It falls into a high basin, flows through a circular hole and drops into a small plunge pool, 1.5m deep, 5m across. Prayer flags and shrine room. Small tea room in hermitage above. Many steps.",
+    "image": "https://i2-prod.cornwalllive.com/whats-on/whats-on-news/article362232.ece/ALTERNATES/s1200e/ancient-sites-st-nectans.jpg",
+    "parking_info": "There is a pay and display car park (£3 for the day, coins only) with limited capacity."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 2,
+  "fields": {
+    "name": "Higher Glen Etive",
+    "region": 7,
+    "location": "Ballachulish",
+    "postcode": "PH49 4J",
+    "description": "A dramatic glen with perfect river pools running very close to road. Good pub nearby",
+    "image": "https://www.diggersworld.net/wp-content/uploads/rs9-etive2.jpg",
+    "parking_info": "It can be difficult to park as the road is narrow. Leave space for people to pass."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 3,
+  "fields": {
+    "name": "Lake Pier Poole Harbour",
+    "region": 1,
+    "location": "Poole",
+    "postcode": "BH15 4L",
+    "description": "You’ll find a narrow shingle beach with muddy-ish sea bed. (water shoes recommended to avoid stubbing toes on stones).\r\n\r\nTide takes affect twice daily. Shallow water out to edge of pier where the deep harbour channel suddenly falls away. Dipping opportunities to east and west of pier to get away from the (not too many) crowds – especially to the western side, towards Rockley.",
+    "image": "https://www.southlytchettmanor.co.uk/wp-content/uploads/2021/01/Lake-Drive-Pier-2400x1600.jpg",
+    "parking_info": "Large south-facing car park."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 4,
+  "fields": {
+    "name": "Tongue Pot",
+    "region": 5,
+    "location": "Eskdale",
+    "postcode": "CA19 1T",
+    "description": "A long series of fantastic pools. Tongue Pot is more dramatic with high jumps possible (5m deep) many small pools above. Kail Pot below is sunnier, shallower (1’2m) and more secluded.",
+    "image": "https://images.squarespace-cdn.com/content/v1/596b2969d2b85786e6892853/1662050405311-J85729GNQSMDSKAW43IP/0K3A0143_1.jpg?format=1500w",
+    "parking_info": "Parking can be found free of charge at the foot of Hardknott Pass"
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 5,
+  "fields": {
+    "name": "Blackgang Beach",
+    "region": 2,
+    "location": "Isle of Wight",
+    "postcode": "PO38 2L",
+    "description": "Established naturist beach, perfect for skinny dipping. A bit of a scramble down the path from the car park at the end of Old Blackgang Road, but worth it for the views, wild country & beach, and excellent water quality.",
+    "image": "https://i.ytimg.com/vi/2dG3KKqqOeg/maxresdefault.jpg",
+    "parking_info": "There is a free car park at Whale Chine."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 6,
+  "fields": {
+    "name": "Outney Common",
+    "region": 3,
+    "location": "Bungay",
+    "postcode": "NR351HB",
+    "description": "A 3km stretch of the Waveney meandering around open common land. Good water quality, up to 2m deep in parts, popular for canoeing. Many bays and swimming possibilities.",
+    "image": "https://cd.csuk-solutions.net/uploads/4d/6670181-outney-meadow-caravan-park-1.jpg",
+    "parking_info": "One hour of free parking at the Bungay Car Park."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 7,
+  "fields": {
+    "name": "River Avon St Nicholas Park Warwick",
+    "region": 4,
+    "location": "Warwick",
+    "postcode": "CV344QY",
+    "description": "The River Avon runs between St Nicholas park and another park on the other bank. It’s not to busy, just canoes and rowing boats at the weekends if the weather is fine and some fishermen. Access is a scramble down the bank but nothing too tricky. The water here is probably quite deep and gets deeper as you go down stream; about 6ft in the middle at a guess. It looks clean though it is running throu",
+    "image": "https://cdn.britannica.com/96/114496-050-23A2686E/Castle-Warwick-River-Avon-England-Warwickshire.jpg",
+    "parking_info": "You can park for a fee at St Nicholas Park car park."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 8,
+  "fields": {
+    "name": "Little Canyon",
+    "region": 6,
+    "location": "Glynneath",
+    "postcode": "SA115NR",
+    "description": "An exciting and relatively safe piece of gorge swimming. A pool flows slowly through a deep, narrow channel, 5m wide for about 30m. There’s a large rocky outcrop by path to watch from, or jump in from. Dangerous when flooding.",
+    "image": "https://i2-prod.walesonline.co.uk/incoming/article14954252.ece/ALTERNATES/s1200b/0_188.jpg",
+    "parking_info": "Park near the Angel Inn and walk up the waterfall path."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 9,
+  "fields": {
+    "name": "Todmorden beach",
+    "region": 5,
+    "location": "Gaddings Dam",
+    "postcode": "NE662AH",
+    "description": "Nestled way up on the moors – somewhere between the quaint towns of Todmorden and Walsden. Providing gorgeous views, cracking walking trails, a soft and sandy stretch of beach plus one of the best wild swimming spots in the county. There’s no parking near Gaddings Dam, so you’ll have to ascend one of the steep paths up the moorlands.",
+    "image": "https://themanc.com/wp-content/uploads/2022/08/gaddings-cow.jpg",
+    "parking_info": "Park near the Shepherd's Rest Inn but get their early as it can be very competitive."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 10,
+  "fields": {
+    "name": "Hell Gill",
+    "region": 5,
+    "location": "Yorkshire Dales National Park",
+    "postcode": "CA174JY",
+    "description": "A deep gorge with impressive rock sculptures, shallow stream, small Waterfall or Gorge and midway plunge pool. Dangerous in high water. Scrambling skills required plus ideally rope, wetboots and wetsuit.",
+    "image": "https://sp-images.summitpost.org/983532.JPG?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=5c9cfcf3d43dd4397efaf499c7622f8d",
+    "parking_info": "There is a small parking area beside the railway bridge at Aisgill Moor Cottages."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 11,
+  "fields": {
+    "name": "Wain Wath",
+    "region": 5,
+    "location": "Upper Swaledale",
+    "postcode": "DL116DZ",
+    "description": "A wide Waterfall or Gorge, about 3m high, with pleasant plunge pool and open aspect. Limestone cliffs in valley and grassy banks for picnics. Interesting river and rock shapes downstream and good paddling.",
+    "image": "https://2.bp.blogspot.com/-SktQb8AbfHw/Vd8HgunuuqI/AAAAAAAAAck/y0qd8u8rRE4/s1600/Wain%2BWath%2BForce-1878.jpg",
+    "parking_info": "Space is available on the sides of the B6270 main road by the entrance for easy access"
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 12,
+  "fields": {
+    "name": "Loup Scar",
+    "region": 5,
+    "location": "Burnsall",
+    "postcode": "BD236BS",
+    "description": "A fantastic stretch of grassy riverside incorporating the limestone cliffs and plunge pool of Loup Scar and the shallower, larger, grassy river pool just downstream.",
+    "image": "https://www.ellis-brigham.com/media/wysiwyg/amasty/EB_Blog/2021/June/wild-swimming-og.jpg",
+    "parking_info": "Free parking opposite the Wharfe View Tearoom."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 13,
+  "fields": {
+    "name": "Loughrigg Tarn",
+    "region": 5,
+    "location": "Skelwith",
+    "postcode": "LA229HF",
+    "description": "Beautiful small tarn, relatively warm, under skyline of Langdale Pikes. Basic but scenic campsite adjoining.",
+    "image": "https://1.bp.blogspot.com/-MTYpjr9HHWs/XtkMBmMKu0I/AAAAAAAAIYA/7RcfnJNW_1EBp7gPUntm__1_x3lNbNavgCLcBGAsYHQ/s16000/Loughrigg-fell-walk-best-route-grasmere-windermere-lake-district-walks-rydal-water-27.",
+    "parking_info": "Small lay-by at NY 346040."
+  }
+},
+{
+  "model": "swim_sites.swim_site",
+  "pk": 14,
+  "fields": {
+    "name": "Rydal Bower",
+    "region": 5,
+    "location": "Rydal Mount",
+    "postcode": "LA229LX",
+    "description": "A narrow dark cleft between rock walls and Waterfall or Gorge, crowned with rowan. Very deep (4m) and cold with cliff to jump from. Hidden deep in the woods with magical qualities.",
+    "image": "https://www.andrewswalks.co.uk/wp-content/uploads/Rydal3-9.jpg",
+    "parking_info": "Park along the lane leading off the A591 Ambleside to Grasmere road."
+  }
+}
 ]
