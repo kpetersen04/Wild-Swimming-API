@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'regions',
     'swim_sites',
     'comments',
+    'favorites'
 
 ]
 

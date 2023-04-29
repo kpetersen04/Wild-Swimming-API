@@ -24,7 +24,8 @@ urlpatterns = [
     path('regions/', include('regions.urls')),
     path('swim-sites/', include('swim_sites.urls')),
     path('auth/', include('jwt_auth.urls')),
-    path('comments/', include('comments.urls'))
+    path('comments/', include('comments.urls')),
+    path('favorites/', include('favorites.urls'))
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

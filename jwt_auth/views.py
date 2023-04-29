@@ -6,6 +6,9 @@ from datetime import datetime, timedelta
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.generics import UpdateAPIView
+
 
 from .serializers.common import UserSerializer
 from .serializers.populated import PopulatedUserSerializer
@@ -53,6 +56,7 @@ class UserListView(APIView):
         return Response(serialized_users.data, status=status.HTTP_202_ACCEPTED)
 
 class UserDetailView(APIView):
+    
     def get_user(self, pk):
         try: 
             return User.objects.get(pk=pk)
@@ -64,4 +68,25 @@ class UserDetailView(APIView):
         serialized_user = PopulatedUserSerializer(user)
         return Response(serialized_user.data, status=status.HTTP_200_OK)
     
-    
+
+
+    # Update user details
+    # def put(self, request, pk):
+    #     print('You made it the edit endpoint.')
+    #     user_to_update = self.get_user(pk=pk); 
+    #     user_to_update.bio = request.data.get('bio', user_to_update.bio)
+    #     updated_user = UserSerializer(user_to_update, exclude=['passpord', 'password_confirmation', 'username', 'email'])
+    #     print(request.data)
+    #     try:
+    #         print(updated_user)
+    #         updated_user.is_valid()
+    #         print(updated_user.is_valid())
+    #         print(updated_user.errors)
+    #         updated_user.save()
+    #         return Response(updated_user.data, status=status.HTTP_202_ACCEPTED)
+    #     except AssertionError as e:
+    #         return Response({"detail": str(e)}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+    #     except: 
+    #         return Response({"detail": "Unprocessible Entity"}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+        
+  
