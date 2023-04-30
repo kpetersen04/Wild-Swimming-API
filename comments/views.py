@@ -11,7 +11,7 @@ from .serializers.common import CommentSerializer
 class CommentListView(APIView):
      permission_classes = (IsAuthenticated, )
      def post(self, request): 
-          request.data["owner"] = request.user.id
+          request.data["created_by"] = request.user.id
           comment_to_create = CommentSerializer(data=request.data)
 
           try: 
@@ -26,6 +26,22 @@ class CommentListView(APIView):
                return Response('Unprocessible Entity', status=status.HTTP_422_UNPROCESSABLE_ENTITY)
           
 class CommentDetailView(APIView):
+     permission_classes = (IsAuthenticated, )
+
+     def put(self, request, pk):
+          print('You made it to the edit endpoint.')
+          comment_to_edit = Comment.objects.get(pk=pk)
+          updated_comment = CommentSerializer(comment_to_edit, data=request.data)
+          try:
+               updated_comment.is_valid()
+               updated_comment.save()
+               return Response(updated_comment.data, status=status.HTTP_202_ACCEPTED)
+          except AssertionError as e: 
+               return Response({'detail': str(e)}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+          except: 
+               res = {"detail": "Unprocessable Entity"}
+               return Response(res, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
+
      def delete(self, request, pk):
           try:
                comment_to_delete = Comment.objects.get(pk=pk)
@@ -35,5 +51,6 @@ class CommentDetailView(APIView):
                return Response(status=status.HTTP_204_NO_CONTENT)
           except Comment.DoesNotExist:
                raise NotFound
+          
 
-
+    
