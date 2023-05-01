@@ -14,6 +14,12 @@ from .serializers.common import FavoriteSerializer
 class FavoriteListView(APIView):
     permission_classes = (IsAuthenticated, )
     def post(self, request): 
+        fav_already_exists = Favorite.objects.filter(
+        site = request.data['site'],
+        ).first()
+
+        if fav_already_exists:
+            return Response({'detail': 'You have already saved this swim site as a favorite.'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
         request.data["created_by"] = request.user.id
         favorite_to_create = FavoriteSerializer(data=request.data)
 
