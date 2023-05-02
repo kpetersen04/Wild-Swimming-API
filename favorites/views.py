@@ -16,11 +16,11 @@ class FavoriteListView(APIView):
     def post(self, request): 
         fav_already_exists = Favorite.objects.filter(
         site = request.data['site'],
+        created_by = request.user.id
         ).first()
 
         if fav_already_exists:
-            return Response({'detail': 'You have already saved this swim site as a favorite.'}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
-        request.data["created_by"] = request.user.id
+            return Response({'detail': "You've already saved this site as a favorite."}, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
         favorite_to_create = FavoriteSerializer(data=request.data)
 
         try: 
