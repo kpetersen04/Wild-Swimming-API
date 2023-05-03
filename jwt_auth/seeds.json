@@ -4,85 +4,19 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$600000$G5kJaVRF9q85eFGlX4wSha$+wSFC2daJMYw/a4c18u3B1FsanbJsYZb3XkqTB0yoSE=",
-    "last_login": "2023-04-22T10:55:39.632Z",
+    "last_login": "2023-04-22T10:55:39Z",
     "is_superuser": true,
     "username": "admin",
     "is_staff": true,
     "is_active": true,
-    "date_joined": "2023-04-22T10:52:08.818Z",
+    "date_joined": "2023-04-22T10:52:08Z",
     "email": "admin@admin.com",
-    "first_name": "",
-    "last_name": "",
+    "first_name": "Taylor",
+    "last_name": "Foxroth",
     "profile_photo": "",
-    "bio": "",
+    "bio": "I am the admin for this site. Here is my bio....UPDATED FURTHER...",
     "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
-  }
-},
-{
-  "model": "jwt_auth.user",
-  "pk": 2,
-  "fields": {
-    "password": "kirstin",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "kpetersen",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2023-04-22T13:17:06Z",
-    "email": "kpetersen@elon.edu",
-    "first_name": "Kirstin",
-    "last_name": "Petersen",
-    "profile_photo": "profile_photos/KirstinAndy-Wedding-Preps-103.jpeg",
-    "bio": "I like clear cool water.",
-    "groups": [],
-    "user_permissions": [],
-    "favorite_sites": [
-      1
-    ]
-  }
-},
-{
-  "model": "jwt_auth.user",
-  "pk": 3,
-  "fields": {
-    "password": "pbkdf2_sha256$600000$tAFlJzdgM3KKZvJHZNl16T$WjUxaSq97RCs+Lxlm38COhTLTgZYsf/RJdAlK8Fbhqo=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "kpetersen04",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2023-04-25T20:18:29.016Z",
-    "email": "kpetersen@gmail.com",
-    "first_name": "kirstin",
-    "last_name": "petersen",
-    "profile_photo": "",
-    "bio": "",
-    "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
-  }
-},
-{
-  "model": "jwt_auth.user",
-  "pk": 6,
-  "fields": {
-    "password": "pbkdf2_sha256$600000$NOeIR7n7syqvZrn0bF6wRm$melWnUUSunkC+MB+Ei5xUuE/r/J1rw/VNBQ/wJjrUvo=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "Swimmer29",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2023-04-25T21:28:14.111Z",
-    "email": "The_swimmer@gmail.com",
-    "first_name": "Katie",
-    "last_name": "jlsfjlksdf",
-    "profile_photo": "",
-    "bio": "",
-    "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
+    "user_permissions": []
   }
 },
 {
@@ -95,78 +29,54 @@
     "username": "KatieWhoSwims",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2023-04-27T19:50:02.048Z",
+    "date_joined": "2023-04-27T19:50:02Z",
     "email": "katie@gmail.com",
     "first_name": "Katie",
     "last_name": "Cunningham",
-    "profile_photo": "",
-    "bio": "",
+    "profile_photo": "https://res.cloudinary.com/de7f0or8o/image/upload/v1683055442/h2gai8fqhpx40fufhlqk.jpg",
+    "bio": "Hi there! I'm just starting to explore this amazing activity. I've always been drawn to the water, and there's something incredibly freeing about diving into a natural body of water and feeling the cool rush envelop my body.\r\n\r\nWhen I'm not in the water, you can find me exploring new trails and hiking paths. I love being outdoors and connecting with nature, and wild swimming is the perfect way to do that.",
     "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
+    "user_permissions": []
   }
 },
 {
   "model": "jwt_auth.user",
-  "pk": 8,
+  "pk": 13,
   "fields": {
-    "password": "pbkdf2_sha256$600000$NwCDnRAdkKBLgALT2lkjoc$wzqEQxIBwOJTd+mq1IWcHEHK2kKTg0hRSGu3stVbz+w=",
+    "password": "pbkdf2_sha256$600000$3ckSx9rKHLapMWQit8nPc6$JskuukcEH/sD8sB9KGIrE/lWLHprSn1k9/3pK6OYFIY=",
     "last_login": null,
     "is_superuser": false,
-    "username": "new",
+    "username": "user34234234",
     "is_staff": false,
-    "is_active": true,
-    "date_joined": "2023-04-27T19:55:04.289Z",
-    "email": "new@gmail.com",
-    "first_name": "ga",
-    "last_name": "faw",
+    "is_active": false,
+    "date_joined": "2023-05-02T14:10:16Z",
+    "email": "user34234234@gmail.com",
+    "first_name": "Trevor",
+    "last_name": "Smith",
     "profile_photo": "",
-    "bio": "",
+    "bio": "sdfdsfdf",
     "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
+    "user_permissions": []
   }
 },
 {
   "model": "jwt_auth.user",
-  "pk": 9,
+  "pk": 24,
   "fields": {
-    "password": "pbkdf2_sha256$600000$lBvoOSwJkjLaQmShVe2RtS$dlONZ8lFy3OGbUWc8Bq4IfDMVgRx7d65gu7Hc+mqS3A=",
+    "password": "pbkdf2_sha256$600000$YVFlH2vt4acXNudOiSg2hN$g4+9mwbO4w344kmpjuFLrwfd3l0C5SypzGXLrZiUc4g=",
     "last_login": null,
     "is_superuser": false,
-    "username": "dsfsdf",
+    "username": "Sarah1972",
     "is_staff": false,
     "is_active": true,
-    "date_joined": "2023-04-29T05:51:03.755Z",
-    "email": "jlksdfj@gmail.com",
-    "first_name": "jagjkldfg",
-    "last_name": "sdfsdf",
-    "profile_photo": "",
-    "bio": "",
+    "date_joined": "2023-05-02T20:57:24Z",
+    "email": "sarah1972@gmail.com",
+    "first_name": "Sarah",
+    "last_name": "Townson",
+    "profile_photo": "http://res.cloudinary.com/de7f0or8o/image/upload/v1683061004/xavgeekz78bbc2yzcwbc.jpg",
+    "bio": "My name is Sarah. I'm a wild swimmer who finds peace and freedom in the open water. I'm a fierce advocate for the protection of natural swimming spots, and I often find myself campaigning against development projects that threaten them.",
     "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
-  }
-},
-{
-  "model": "jwt_auth.user",
-  "pk": 10,
-  "fields": {
-    "password": "pbkdf2_sha256$600000$nNBNMrQQRzSeRRLsZvfrSW$Sh0jNWid+seTFmfM4wrOybZ9qz8X9yPHFkQFo2NO+Vs=",
-    "last_login": null,
-    "is_superuser": false,
-    "username": "newUser",
-    "is_staff": false,
-    "is_active": true,
-    "date_joined": "2023-04-29T13:50:40.187Z",
-    "email": "newUser@hotmail.com",
-    "first_name": "New",
-    "last_name": "User",
-    "profile_photo": "",
-    "bio": "Here is a bit about me.",
-    "groups": [],
-    "user_permissions": [],
-    "favorite_sites": []
+    "user_permissions": []
   }
 }
 ]

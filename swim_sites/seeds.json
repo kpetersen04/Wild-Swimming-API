@@ -81,7 +81,7 @@
   "model": "swim_sites.swim_site",
   "pk": 7,
   "fields": {
-    "name": "River Avon St Nicholas Park Warwick",
+    "name": "St Nicholas Park",
     "region": 4,
     "location": "Warwick",
     "postcode": "CV344QY",
