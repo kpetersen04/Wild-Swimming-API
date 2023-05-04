@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "region_name": "South West England",
-    "description": ""
+    "description": "The South West of England has some of the most beautiful and diverse landscapes for wild swimming in the UK. From the rugged coastline of Cornwall, to the rolling hills of Devon and the wild moors of Dartmoor, there are plenty of opportunities for outdoor swimming in stunning locations.\r\n\r\nIn Cornwall, wild swimmers can explore the beautiful coves and beaches around the coastline, with many sheltered spots for safe swimming. In Devon, the River Dart is a popular spot for wild swimmers, with clear water and plenty of secluded spots to explore. Dartmoor also offers many opportunities for wild swimming, with rivers and waterfalls to discover in the beautiful moorland landscape."
   }
 },
 {
@@ -12,7 +12,7 @@
   "pk": 2,
   "fields": {
     "region_name": "South East England",
-    "description": ""
+    "description": "South East England offers a variety of wild swimming opportunities, from rivers and lakes to coastal waters. The region includes the counties of Kent, East Sussex, West Sussex, Surrey, and parts of Hampshire and Berkshire. Some popular locations for wild swimming in the South East include the River Thames, the chalk streams of the Chiltern Hills, the sea at Brighton Beach, and the lakes of the South Downs National Park. The South East is also home to many outdoor swimming clubs and groups, as well as several open water swimming events."
   }
 },
 {
@@ -20,7 +20,7 @@
   "pk": 3,
   "fields": {
     "region_name": "East England",
-    "description": ""
+    "description": "East England offers a diverse range of wild swimming opportunities, from rivers and lakes to the coast. The region is home to several Areas of Outstanding Natural Beauty, including the Norfolk and Suffolk coasts, the Norfolk Broads, and the Wolds and Fens of Lincolnshire. The Fens in particular offer unique wild swimming opportunities in the shallow, reed-lined rivers and pools that dot the landscape. The coast also offers numerous opportunities for wild swimming, with secluded coves, sandy beaches, and rugged cliffs to explore."
   }
 },
 {
@@ -28,7 +28,7 @@
   "pk": 4,
   "fields": {
     "region_name": "Midlands and Central England",
-    "description": ""
+    "description": "The Midlands and Central England region is known for its diverse landscape, from rolling hills to flat plains, making it a popular destination for wild swimming. There are several rivers, lakes, and waterfalls that offer opportunities for wild swimming. Some popular areas for wild swimming in the Midlands and Central England include the Peak District, the Malvern Hills, the Cotswolds, and the Lake District."
   }
 },
 {
@@ -36,7 +36,7 @@
   "pk": 5,
   "fields": {
     "region_name": "Northern England",
-    "description": ""
+    "description": "Northern England offers a wealth of opportunities for wild swimming, with many stunning rivers, lakes, and reservoirs to explore. The region is known for its rugged natural beauty, and there are many remote and wild locations where swimmers can enjoy the peace and tranquility of the great outdoors. Some of the most popular areas for wild swimming in Northern England include the Lake District, Yorkshire Dales, and Northumberland."
   }
 },
 {
@@ -44,7 +44,7 @@
   "pk": 6,
   "fields": {
     "region_name": "Wales",
-    "description": ""
+    "description": "Wales is known for its rugged coastline, beautiful lakes, and winding rivers, making it a great destination for wild swimming. Some popular spots for wild swimming in Wales include Snowdonia National Park, the Gower Peninsula, and the Brecon Beacons. The water can be chilly year-round, so wetsuits are often recommended. It's also important to be aware of the tides and currents, as well as any potential hazards in the water. Overall, Wales offers plenty of opportunities for adventurous swimmers to explore its natural beauty."
   }
 },
 {
@@ -52,7 +52,7 @@
   "pk": 7,
   "fields": {
     "region_name": "Scotland",
-    "description": ""
+    "description": "Scotland is known for its rugged landscapes, pristine lochs, and picturesque beaches, making it a popular destination for wild swimmers. The Highlands especially are home to some of the most scenic lochs and rivers in the country, such as Loch Lomond, Loch Morlich, and the River Spey. These locations provide ample opportunities for wild swimming, especially during the summer months when the water temperature is more comfortable."
   }
 }
 ]

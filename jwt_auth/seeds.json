@@ -13,7 +13,7 @@
     "email": "admin@admin.com",
     "first_name": "Taylor",
     "last_name": "Foxroth",
-    "profile_photo": "",
+    "profile_photo": "https://res.cloudinary.com/de7f0or8o/image/upload/v1683182954/rvgeonbagoc3ym6jodkt.webp",
     "bio": "I am the admin for this site. Here is my bio....UPDATED FURTHER...",
     "groups": [],
     "user_permissions": []
@@ -53,8 +53,8 @@
     "email": "user34234234@gmail.com",
     "first_name": "Trevor",
     "last_name": "Smith",
-    "profile_photo": "",
-    "bio": "sdfdsfdf",
+    "profile_photo": "https://res.cloudinary.com/de7f0or8o/image/upload/v1683143878/f3qlqqij1afu1khkjxr2.jpg",
+    "bio": "Hi, I'm Trevor. I'm a dad of two who loves to go wild swimming with my kids. We spend our weekends exploring local rivers and lakes, and we're always looking for new places to swim. There's something magical about being in the water and feeling connected to nature. \r\n\r\nIt's a great way to bond with my kids and teach them about the environment. We always come prepared with wetsuits and safety equipment, and we make sure to follow local guidelines and regulations. Swimming has become a family hobby that we all enjoy, and I'm excited to see where our adventures take us next.",
     "groups": [],
     "user_permissions": []
   }
