@@ -65,7 +65,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com", # might have to delete
     "http://localhost:5173",
     "http://127.0.0.1:5173",
-    "https://wild-swimming.netlify.app/"
+    "https://wild-swimming.netlify.app"
 
 ]
 
