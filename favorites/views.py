@@ -9,7 +9,6 @@ from rest_framework.permissions import IsAuthenticated
 
 from .models import Favorite
 from .serializers.common import FavoriteSerializer
-# from .serializers.populated import PopulatedFavoriteSerializer
 
 class FavoriteListView(APIView):
     permission_classes = (IsAuthenticated, )

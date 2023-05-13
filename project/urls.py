@@ -26,7 +26,6 @@ urlpatterns = [
     path('auth/', include('jwt_auth.urls')),
     path('comments/', include('comments.urls')),
     path('favorites/', include('favorites.urls')),
-    # path("", include("posts.urls")), # added this for the photos?
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
