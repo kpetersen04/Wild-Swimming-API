@@ -180,7 +180,6 @@ If the showButtons state is set to true, the following code allows the delete co
           {showButtons && (
             <>
               {!isEditing && (
-                // This removes the deleteComment button when you are editing your comment
                 <Button
                   variant="outline-secondary"
                   className="_delete-button"
